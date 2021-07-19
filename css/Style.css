@@ -1,0 +1,307 @@
+/* Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 2rem 5rem;
+}
+
+
+/* Main Area */
+
+#main .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+}
+
+#main .personal-details {
+    background-color: #fff;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#main .container .personal-details img {
+    position: relative;
+}
+
+#main .details {
+    margin: 0.5rem;
+    border-bottom: 0.5px solid #666;
+}
+
+#main .details li {
+    padding: 7px 0;
+    color: #666;
+}
+
+#main .details li:last-child {
+    margin-bottom: 20px;
+}
+
+#main .details li i {
+    padding-right: 10px;
+    color: teal;
+}
+
+.skills {
+    margin: 20px 10px;
+}
+
+.skills h2 {
+    color: #333;
+}
+
+.skills h2 i {
+    padding-right: 5px;
+    color: teal;
+}
+
+.skills p {
+    padding: 20px 0;
+    padding: 5px;
+}
+
+.skills .html {
+    width: 100%;
+    background-color: teal;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.skills .css {
+    width: 80%;
+    background-color: teal;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.skills .css-1,
+.js,
+.eng,
+.uz,
+.ru {
+    background-color: #ddd;
+    border-radius: 15px;
+}
+
+.JavaScript {
+    width: 20%;
+    background-color: teal;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.languages-con {
+    margin-top: 40px;
+}
+
+.languages-con .languages {
+    padding: 15px 5px;
+    font-size: 25px;
+    color: #333;
+}
+
+.languages-con .languages i {
+    padding-right: 10px;
+    font-size: 25px;
+    color: teal;
+}
+
+.languages-con p {
+    padding: 15px 0;
+}
+
+.english {
+    width: 90%;
+    background-color: teal;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.uzbek {
+    width: 100%;
+    background-color: teal;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+i {
+    color: teal;
+}
+
+.russian {
+    width: 30%;
+    background-color: teal;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-rows {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.grid-rows .work-experience,
+.grid-rows .education {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.heading {
+    padding: 10px;
+}
+
+.heading i {
+    padding-right: 5px;
+}
+
+.work-experience .experience-container,
+.education-info {
+    margin: 0 1rem;
+}
+
+.card {
+    padding: 2rem 0;
+}
+
+.card p {
+    padding: 10px 0;
+}
+
+.date {
+    color: teal;
+}
+
+.date i {
+    padding-right: 10px;
+}
+
+.date .current {
+    background-color: teal;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.contact img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 4rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.contact form {
+    padding: 10px 1rem;
+}
+
+.contact form label {
+    display: block;
+    color: #666;
+    /* padding: 5px 0; */
+}
+
+input {
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid teal;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+}
+
+.contact-me {
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    color: teal;
+}
+
+.btn {
+    padding: 10px 25px;
+    color: #fff;
+    border: none;
+    background-color: teal;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+footer i {
+    color: #fff;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: teal;
+}
+
+@media (max-width:768px) {
+    #main .container {
+        grid-template-columns: 1fr;
+        padding: 0.3rem 0.5rem;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        margin: 0.5rem;
+    }
+    .contact form input {
+        width: 100%;
+    }
+}
